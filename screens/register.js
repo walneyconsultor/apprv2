@@ -26,7 +26,7 @@ export default class FloatingLabelExample extends Component {
                 iconRight
                 icon="arrow-forward"
                 light
-                pressed={ () => this.props.navigation.navigate('Materials') } 
+                pressed={ () => this.props.navigation.navigate('Perfil') } 
                 title="CADASTRAR" />
         </Content>
       </Container>

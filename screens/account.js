@@ -21,7 +21,7 @@ export default class FixedLabelExample extends Component {
                 iconRight
                 icon="arrow-forward"
                 light
-                pressed={ () => this.props.navigation.navigate('Materials') } 
+                pressed={ () => this.props.navigation.navigate('Perfil') } 
                 title="ENTRAR" />
         </Content>
       </Container>

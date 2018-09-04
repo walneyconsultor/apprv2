@@ -6,6 +6,8 @@ import Account from '../screens/account';
 
 import Register from '../screens/register';
 
+import Perfil from '../screens/perfil';
+
 import Materials from '../screens/materials';
 
 const AppNavigator = createStackNavigator({
@@ -29,6 +31,12 @@ const AppNavigator = createStackNavigator({
         screen: Register,
         navigationOptions:{
             title:  'Register'
+        }
+    },
+    Perfil: {
+        screen: Perfil,
+        navigationOptions: {
+            title: 'Perfil'
         }
     },
     Materials: {
