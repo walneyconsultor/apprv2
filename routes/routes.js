@@ -12,12 +12,17 @@ import Materials from '../screens/materials';
 
 const AppNavigator = createStackNavigator({
 
-   
-
+    
     Splash: {
         screen: Splash,
         navigationOptions: {
-            title: 'Splash'
+            title: 'Splash',
+            headerTintColor:'white',
+            headerStyle:{
+                backgroudcolor:'green',
+                borderBottomWidth:1,
+                borderBottomColor:'#C5C5C5',
+            }
         }
     },
 

@@ -10,6 +10,8 @@ import {
     Item,
     Header,
     Input,
+    Body,
+    Title,
     Label
 } from 'native-base'
 
@@ -20,9 +22,8 @@ class Splash extends Component {
         return (
             
             <Container>
-                <Header></Header>
                 <Content>
-                <Thumbnail squared large source={ Logo } />
+                <Thumbnail square large source={ Logo } />
                     <Form>
                         <Item floatingLabel>
                             <Label>Insira seu nome de usuário</Label>
