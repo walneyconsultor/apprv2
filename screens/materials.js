@@ -14,7 +14,7 @@ export default class ListThumbnailExample extends Component {
     return (
       <Container>
         <Content>
-          <List style={{ marginTop: 25 }}>
+          <List style={{ marginTop: 30 }}>
             <ListItem thumbnail>
               <Left>
               <Thumbnail square large source={ Metal } />
@@ -24,7 +24,7 @@ export default class ListThumbnailExample extends Component {
                 <Text note numberOfLines={1}>Metal Reciclável</Text>
               </Body>
               <Right>
-                <Button transparent>
+                <Button pressed={ () => this.props.navigation.navigate('Feedback') }>
                   <Text>Item</Text>
                 </Button>
               </Right>
@@ -87,7 +87,7 @@ export default class ListThumbnailExample extends Component {
             </ListItem>
           </List>
           <RoundedButton 
-            pressed={ () => this.props.navigation.navigate('') } 
+            pressed={ () => this.props.navigation.navigate('Feedback') } 
             title="ENVIAR" />
         </Content>
       </Container>

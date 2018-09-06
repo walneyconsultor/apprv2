@@ -10,9 +10,10 @@ import Perfil from '../screens/perfil';
 
 import Materials from '../screens/materials';
 
+import Feedback from '../screens/feedback';
+
 const AppNavigator = createStackNavigator({
 
-    
     Splash: {
         screen: Splash,
         navigationOptions: {
@@ -49,7 +50,14 @@ const AppNavigator = createStackNavigator({
         navigationOptions:{
             title:  'Materials'
         }
-    }
+    },
+    
+    Feedback: {
+        screen: Feedback,
+        navigationOptions:{
+            title:  'Feedback'
+        }
+    },
     
 
 }, { headerMode: 'none' })

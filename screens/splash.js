@@ -15,14 +15,16 @@ import {
     Label
 } from 'native-base'
 
+import styles from './styles/styles.js';
+
 import { RoundedButton } from '../components/components';
 
 class Splash extends Component {
     render() {
         return (
             
-            <Container>
-                <Content>
+            <Container style={ styles.bgLightGreen }>
+                <Content style={{ marginTop: 30 }}>
                 <Thumbnail square large source={ Logo } />
                     <Form>
                         <Item floatingLabel>
@@ -37,12 +39,12 @@ class Splash extends Component {
                 </Content>
                 <Content>
                     <RoundedButton 
-                        pressed={ () => this.props.navigation.navigate('Account') } 
+                        pressed={ () => this.props.navigation.navigate('Perfil') } 
                         title="LOGIN" />
                     <Text>Ainda não tem conta? Cadastre-se aqui.</Text>
                     <RoundedButton 
                         pressed={ () => this.props.navigation.navigate('Register') }
-                        title="Crie sua conta agora" />
+                        title="CRIAR UMA CONTA" />
                 </Content>
             </Container>
         )
