@@ -1,16 +1,12 @@
 import { createStackNavigator } from 'react-navigation';
 
 import Splash from '../screens/splash';
-
 import Account from '../screens/account';
-
 import Register from '../screens/register';
-
 import Perfil from '../screens/perfil';
-
 import Materials from '../screens/materials';
-
 import Feedback from '../screens/feedback';
+import Selectprofilerole from '../screens/selectprofilerole';
 
 const AppNavigator = createStackNavigator({
 
@@ -18,12 +14,13 @@ const AppNavigator = createStackNavigator({
         screen: Splash,
         navigationOptions: {
             title: 'Splash',
-            headerTintColor:'white',
-            headerStyle:{
-                backgroudcolor:'green',
-                borderBottomWidth:1,
-                borderBottomColor:'#C5C5C5',
+            
             }
+    },
+    Selectprofilerole: {
+        screen: Selectprofilerole,
+        navigationOptions:{
+            title:  'Selectprofilerole'
         }
     },
 
@@ -32,6 +29,7 @@ const AppNavigator = createStackNavigator({
         navigationOptions:{
             title:  'Account'
         }
+        
     },
     Register: {
         screen: Register,

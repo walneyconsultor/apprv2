@@ -2,6 +2,6 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     bgLightGreen: {
-        backgroundColor: '#87d187'
+        backgroundColor: '#D1E9CF'
     }
 })
