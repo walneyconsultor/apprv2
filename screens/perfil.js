@@ -13,11 +13,17 @@ export default class ThumbnailExample extends Component {
     return (
       <Container>
         <Header />
+        <Text style={{
+            marginTop: 10,
+            color:'green',
+            marginLeft: 'auto',
+            marginRight: 'auto'
+            }}>SEU PERFIL</Text>
         <Content>
-          <Text>Seu Perfil</Text>
+          
           <Thumbnail style={{
-                  width: 280,
-                  height: 280,
+                  width: 200,
+                  height: 200,
                   marginTop: 20,
                   marginBottom: 10,
                   marginLeft: 'auto',
@@ -38,12 +44,13 @@ export default class ThumbnailExample extends Component {
                   <Text>
                    VOCE TEM: RV 0,2314
                   </Text>
+                  <RoundedButton 
+                        pressed={ () => this.props.navigation.navigate('Materials') } 
+                        title="SELECIONAR MATERIAIS" />
               </Body>
             </CardItem>
           </Card>
-          <RoundedButton 
-                        pressed={ () => this.props.navigation.navigate('Materials') } 
-                        title="SELECIONAR MATERIAIS" />
+          
         </Content>
       </Container>
     );

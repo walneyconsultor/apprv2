@@ -5,6 +5,8 @@ import {
     Container,
     Content,
     Thumbnail,
+    Body,
+    Text
     
 } from 'native-base'
 
@@ -23,24 +25,24 @@ class Splash extends Component {
                     flex: 2,
                     marginTop: 30
                   }}>
+                  <Body>
                 <Thumbnail style={{
                   width: 140,
                   height: 140,
                   marginTop: 20,
                   marginBottom: 10,
-                  marginLeft: 'auto',
-                  marginRight: 'auto'
                 }} square large source={ Logo } />
+                </Body>
                 </Content>
                 <Content contentContainerStyle={{
-                  marginTop: 50,
+                  marginTop: 30,
                   justifyContent: 'flex-start',
-                  alignItems: 'center',
                   display: 'flex',
                   flex: 1,
                   flexDirection: 'column'}}>
-                    <RoundedButton pressed={ () => this.props.navigation.navigate('Selectprofilerole') } title="FAÇA LOGIN"/>
+                    <RoundedButton pressed={ () => this.props.navigation.navigate('SelectProfileRole') } title="FAÇA LOGIN"/>
                     <RoundedButton pressed={ () => this.props.navigation.navigate('Register') } title="OU CRIE A SUA CONTA"/>
+                    
                 </Content>
 
             </Container>

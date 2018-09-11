@@ -4,7 +4,7 @@ import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Ic
 
 import Logo from  '../assets/img/logo2.png';
 
-import Feedback from '../assets/img/icons-recycle/png/feedback-01.png';
+import Feedback from '../assets/img/feedback.png';
 
 export default class CardImageExample extends Component {
   render() {
@@ -38,11 +38,11 @@ export default class CardImageExample extends Component {
                   <Text>4 Comments</Text>
                 </Button>
               </Body>
-              <Right>
-                <Text>19h Out</Text>
-              </Right>
             </CardItem>
           </Card>
+          <RoundedButton 
+            pressed={ () => this.props.navigation.navigate('Splash') } 
+            title="Voltar" />
         </Content>
       </Container>
     );
