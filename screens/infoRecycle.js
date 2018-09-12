@@ -23,7 +23,7 @@ const cards = [
     image: require('../assets/img/bateria.jpg'),
   }
 ];
-export default class DeckSwiperExample extends Component {
+export default class InfoRecycleList extends Component {
   render() {
     return (
       <Container>

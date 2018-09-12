@@ -7,7 +7,7 @@ import Perfil from  '../assets/img/perfil.png';
 import { RoundedButton } from '../components/components';
 
 
-export default class ThumbnailExample extends Component {
+export default class ThumbnailUser extends Component {
   render() {
     const uri = "https://facebook.github.io/react-native/docs/assets/favicon.png";
     return (

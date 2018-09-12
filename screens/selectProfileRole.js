@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 import { Container, Content, Thumbnail, Text, } from 'native-base';
 
-import userIcon from  '../assets/img/icone-cidadao-consciente.png';
+import userIcon from  '../assets/img/UserGreen2.png';
 
-import coletorIcon from '../assets/img/coletormini.png';
+import coletorIcon from '../assets/img/man2.png';
 
 import { RoundedButton } from '../components/components';
 
 
-export default class ThumbnailExample extends Component {
+export default class SelectProfile extends Component {
   render() {
     return (
       <Container>
@@ -17,8 +17,8 @@ export default class ThumbnailExample extends Component {
           <Text>Seu Perfil</Text>
 
         <Thumbnail style={{
-                  width: 140,
-                  height: 140,
+                  width: 128,
+                  height: 128,
                   marginTop: 20,
                   marginBottom: 10,
                   marginLeft: 'auto',
@@ -30,8 +30,8 @@ export default class ThumbnailExample extends Component {
             title="Usuario RV" />
 
         <Thumbnail style={{
-                  width: 270,
-                  height: 160,
+                  width: 128,
+                  height: 128,
                   marginTop: 20,
                   marginBottom: 10,
                   marginLeft: 'auto',

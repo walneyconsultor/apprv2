@@ -9,7 +9,7 @@ import Battery from  '../assets/img/icons-recycle/png/045-battery-2.png';
 
 import { RoundedButton } from '../components/components';
 
-export default class ListMaterials extends Component {
+export default class MaterialsList extends Component {
   render() {
     return (
       <Container>

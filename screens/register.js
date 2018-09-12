@@ -3,7 +3,7 @@ import { Container,Content, Form, Item, Input, Label } from 'native-base';
 
 import { RoundedButton } from '../components/components';
 
-export default class FloatingLabelExample extends Component {
+export default class UserRegister extends Component {
   render() {
     return (
       <Container>

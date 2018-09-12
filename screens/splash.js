@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import Logo from  '../assets/img/logo2.png';
 
 import {
@@ -6,7 +7,9 @@ import {
     Content,
     Thumbnail,
     Body,
-    Text
+    Fab,
+    Button,
+    Icon
     
 } from 'native-base'
 
@@ -15,6 +18,7 @@ import styles from './styles/styles.js';
 import { RoundedButton } from '../components/components';
 
 class Splash extends Component {
+  
     render() {
         return (
 
@@ -25,6 +29,7 @@ class Splash extends Component {
                     flex: 2,
                     marginTop: 30
                   }}>
+
                   <Body>
                 <Thumbnail style={{
                   width: 140,

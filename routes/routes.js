@@ -1,7 +1,7 @@
 import { createStackNavigator } from 'react-navigation';
 
 import Splash from '../screens/splash';
-import Info from '../screens/info';
+import InfoRecycle from '../screens/infoRecycle';
 import Account from '../screens/account';
 import AccountColetor from '../screens/accountColetor';
 import Register from '../screens/register';
@@ -72,13 +72,12 @@ const AppNavigator = createStackNavigator({
             title:  'Feedback'
         }
     },
-    Info: {
-        screen: Info,
+    InfoRecycle: {
+        screen: InfoRecycle,
         navigationOptions: {
-            title: 'Info',
+            title: 'InfoRecycle',
         }
-    },
-    
+    }
 
 }, { headerMode: 'none' })
 
