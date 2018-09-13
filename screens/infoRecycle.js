@@ -3,8 +3,8 @@ import { Image } from 'react-native';
 import { Container, Header, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
 const cards = [
   {
-    text: 'Card One',
-    name: 'One',
+    text: 'Latinhas',
+    name: 'Texto 1',
     image: require('../assets/img/latinha.png'),
   },
   {
@@ -35,15 +35,15 @@ export default class InfoRecycleList extends Component {
               <Card style={{ elevation: 3 }}>
                 <CardItem>
                   <Left>
-                    <Thumbnail source={item.image} />
+                    <Thumbnail square source={item.image} />
                     <Body>
                       <Text>{item.text}</Text>
-                      <Text note>NativeBase</Text>
+                      <Text note>Materiais Recicláveis</Text>
                     </Body>
                   </Left>
                 </CardItem>
                 <CardItem cardBody>
-                  <Image style={{ height: 300, flex: 1 }} source={item.image} />
+                  <Image style={{ height: 320, flex: 1 }} source={item.image} />
                 </CardItem>
                 <CardItem>
                   <Icon name="heart" style={{ color: '#ED4A6A' }} />

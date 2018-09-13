@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 
-import Logo from  '../assets/img/logo2.png';
+import {TouchableOpacity} from 'react-native';
+
+import Logo from  '../assets/img/logo3.png';
 
 import {
     Container,
     Content,
     Thumbnail,
-    Body,
-    Fab,
-    Button,
-    Icon
+    Body
     
 } from 'native-base'
 
@@ -29,14 +28,16 @@ class Splash extends Component {
                     flex: 2,
                     marginTop: 30
                   }}>
-
                   <Body>
+                <TouchableOpacity 
+                    onPress={ () => this.props.navigation.navigate('InfoRecycle') }>
                 <Thumbnail style={{
-                  width: 140,
-                  height: 140,
-                  marginTop: 20,
+                  width: 200,
+                  height: 190,
+                  marginTop: 10,
                   marginBottom: 10,
                 }} square large source={ Logo } />
+                </TouchableOpacity>
                 </Body>
                 </Content>
                 <Content contentContainerStyle={{
@@ -47,9 +48,7 @@ class Splash extends Component {
                   flexDirection: 'column'}}>
                     <RoundedButton pressed={ () => this.props.navigation.navigate('SelectProfileRole') } title="FAÇA LOGIN"/>
                     <RoundedButton pressed={ () => this.props.navigation.navigate('Register') } title="OU CRIE A SUA CONTA"/>
-                    
                 </Content>
-
             </Container>
         )
     }

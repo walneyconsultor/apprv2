@@ -14,6 +14,8 @@ import SelectProfileRole from '../screens/selectProfileRole';
 const AppNavigator = createStackNavigator({
 
        
+    
+    
     Splash: {
         screen: Splash,
         navigationOptions: {
@@ -41,6 +43,7 @@ const AppNavigator = createStackNavigator({
         }
         
     },
+    
     Register: {
         screen: Register,
         navigationOptions:{

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, List, ListItem, Thumbnail, Text, Left, Body, Right, Button } from 'native-base';
+import { Container,Content, List, ListItem, Thumbnail, Text, Left, Body, Right, Button } from 'native-base';
 
 import Metal from  '../assets/img/icons-recycle/png/028-metal.png';
 import Plastic from  '../assets/img/icons-recycle/png/024-plastic.png';
@@ -24,8 +24,11 @@ export default class MaterialsList extends Component {
                 <Text note numberOfLines={1}>Metal Reciclável</Text>
               </Body>
               <Right>
-                <Button pressed={ () => this.props.navigation.navigate('Feedback') }>
-                  <Text>Item</Text>
+                <Button 
+                rounded
+                success
+                onPress={ () => this.props.navigation.navigate('Feedback') }>
+                  <Text>Add+</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -38,7 +41,7 @@ export default class MaterialsList extends Component {
                 <Text note numberOfLines={1}>Garrafa PET</Text>
               </Body>
               <Right>
-                <Button transparent>
+                <Button>
                   <Text>Item</Text>
                 </Button>
               </Right>
@@ -52,7 +55,7 @@ export default class MaterialsList extends Component {
                 <Text note numberOfLines={1}>Vidros</Text>
               </Body>
               <Right>
-                <Button transparent>
+                <Button>
                   <Text>Item</Text>
                 </Button>
               </Right>
@@ -66,7 +69,7 @@ export default class MaterialsList extends Component {
                 <Text note numberOfLines={1}>Papelão</Text>
               </Body>
               <Right>
-                <Button transparent>
+                <Button>
                   <Text>Item</Text>
                 </Button>
               </Right>
@@ -80,7 +83,7 @@ export default class MaterialsList extends Component {
                 <Text note numberOfLines={1}>Celular</Text>
               </Body>
               <Right>
-                <Button transparent>
+                <Button>
                   <Text>Item</Text>
                 </Button>
               </Right>

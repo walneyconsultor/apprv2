@@ -1,19 +1,23 @@
-import React, { Component } from 'react';
+import React, { Component,  } from 'react';
+
 import { Container, Header, Content, Form, Item, Input, Label } from 'native-base';
+
 import { RoundedButton } from '../components/components';
-export default class LabelColetor extends Component {
+
+export default class FormCadastroColetor extends Component {
+  
   render() {
     return (
       <Container>
         <Header />
         <Content>
           <Form>
-            <Item fixedLabel>
-              <Label>Username</Label>
+            <Item floatingLabel>
+              <Label>Nome do coletor</Label>
               <Input />
             </Item>
-            <Item fixedLabel last>
-              <Label>Password</Label>
+            <Item floatingLabel last>
+              <Label>Senha</Label>
               <Input />
             </Item>
           </Form>

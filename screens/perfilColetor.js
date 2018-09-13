@@ -7,7 +7,7 @@ import PerfilColetor from  '../assets/img/coletor2.png';
 import { RoundedButton } from '../components/components';
 
 
-export default class ThumbnailColetor extends Component {
+export default class ColetorPerfil extends Component {
   render() {
     const uri = "https://facebook.github.io/react-native/docs/assets/favicon.png";
     return (
