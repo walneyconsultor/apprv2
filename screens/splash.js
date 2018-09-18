@@ -27,7 +27,7 @@ export default class Login extends Component {
               <LoginButton
                   label="Forgot Login/Pass"
                   styles={{button: styles.alignRight, label: styles.label}}
-                  onPress={ () => this.props.navigation.navigate('Account')} />
+                  onPress={ () => this.props.navigation.navigate('SelectProfileRole')} />
           </Container>
           <Container>
               <Label text="Username or Email" />
