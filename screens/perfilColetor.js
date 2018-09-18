@@ -42,8 +42,8 @@ export default class ColetorPerfil extends Component {
                    COOPERATIVA: CONCALVES S/A
                   </Text>
                   <RoundedButton 
-                        pressed={ () => this.props.navigation.navigate('Materials') } 
-                        title="SELECIONAR MATERIAIS" />
+                        pressed={ () => this.props.navigation.navigate('Maps') } 
+                        title="VERIFICAR COLETAS" />
               </Body>
             </CardItem>
           </Card>

@@ -16,7 +16,9 @@ export default class App extends React.Component {
     await Expo.Font.loadAsync({
       Roboto: require("native-base/Fonts/Roboto.ttf"),
       Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf"),
-      Ionicons: require("native-base/Fonts/Ionicons.ttf")
+      Ionicons: require("native-base/Fonts/Ionicons.ttf"),
+      Verdana: require("./assets/fonts/Verdana.ttf"),
+      FontAwesome: require('./assets/fonts/FontAwesome.ttf')
     });
 
     this.setState({ isLoadingFonts: false });
@@ -25,10 +27,10 @@ export default class App extends React.Component {
   componentWillMount() {
     this.loadFonts();
   }
-  
+
   render() {
     const { isLoadingFonts } = this.state;
-    
+
     if(isLoadingFonts) return <Expo.AppLoading />;
     return <AppNavigator />;
   }

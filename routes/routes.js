@@ -6,6 +6,7 @@ import Account from '../screens/account';
 import AccountColetor from '../screens/accountColetor';
 import Register from '../screens/register';
 import Perfil from '../screens/perfil';
+import Maps from '../screens/maps';
 import PerfilColetor from '../screens/perfilColetor';
 import Materials from '../screens/materials';
 import Feedback from '../screens/feedback';
@@ -13,13 +14,17 @@ import SelectProfileRole from '../screens/selectProfileRole';
 
 const AppNavigator = createStackNavigator({
 
-       
-    
-    
+   
     Splash: {
         screen: Splash,
         navigationOptions: {
             title: 'Splash',
+        }
+    },
+    Maps:{
+        screen:Maps,
+        navigationOptions:{
+            title:'Maps',
         }
     },
     SelectProfileRole: {
@@ -28,6 +33,7 @@ const AppNavigator = createStackNavigator({
             title:  'SelectProfileRole'
         }
     },
+    
 
     Account: {
         screen: Account,
@@ -81,6 +87,7 @@ const AppNavigator = createStackNavigator({
             title: 'InfoRecycle',
         }
     }
+
 
 }, { headerMode: 'none' })
 
