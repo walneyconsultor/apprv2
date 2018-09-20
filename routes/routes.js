@@ -1,5 +1,6 @@
 import { createStackNavigator } from 'react-navigation';
 
+import Login from '../screens/login';
 import Splash from '../screens/splash';
 import InfoRecycle from '../screens/infoRecycle';
 import Account from '../screens/account';
@@ -15,6 +16,12 @@ import SelectProfileRole from '../screens/selectProfileRole';
 const AppNavigator = createStackNavigator({
 
    
+    Login: {
+        screen: Login,
+        navigationOptions: {
+            title: 'Login',
+        }
+    },
     Splash: {
         screen: Splash,
         navigationOptions: {

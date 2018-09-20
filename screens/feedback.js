@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right, Fab,  } from 'native-base';
+
+import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Icon, Left, Button, Body, Right, Fab,  } from 'native-base';
 
 import Logo from  '../assets/img/logo2.png';
 
@@ -11,8 +12,8 @@ export default class FeedbackPainel extends Component {
   render() {
     return (
       <Container>
-        <Header />
         <Content>
+        
           <Card>
             <CardItem>
               <Left>
@@ -27,10 +28,13 @@ export default class FeedbackPainel extends Component {
               <Image source={ Feedback } style={{height: 200, width: null, flex: 1}} />
             </CardItem>
           </Card>
-          <RoundedButton 
-            pressed={ () => this.props.navigation.navigate('Splash') } 
-            title="Voltar" />
         </Content>
+        <Body>
+        <Button
+            success 
+            onPress={ () => this.props.navigation.navigate('Login') } 
+            title="Voltar" />
+        </Body>
       </Container>
     );
   }

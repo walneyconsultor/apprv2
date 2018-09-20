@@ -30,14 +30,14 @@ export default class Login extends Component {
                   onPress={ () => this.props.navigation.navigate('SelectProfileRole')} />
           </Container>
           <Container>
-              <Label text="Username or Email" />
+              <Label text="Nome de Usuário ou E-mail" />
               <TextInput
                   underlineColorAndroid='transparent'
                   style={styles.textInput}
               />
           </Container>
           <Container>
-              <Label text="Password" />
+              <Label text="Senha" />
               <TextInput
                   underlineColorAndroid='transparent'
                   secureTextEntry={true}
@@ -58,13 +58,13 @@ export default class Login extends Component {
         <View style={styles.footer}>
             <Container>
                 <LoginButton
-                    label="Sign In"
+                    label="Login"
                     styles={{button: styles.primaryButton, label: styles.buttonWhiteText}}
                     onPress={this.press.bind(this)} />
             </Container>
             <Container>
                 <LoginButton
-                    label="CANCEL"
+                    label="CANCELAR"
                     styles={{label: styles.buttonBlackText}}
                     onPress={this.press.bind(this)} />
             </Container>
@@ -131,63 +131,3 @@ const styles = StyleSheet.create({
      marginTop: 100
   }
 });
-
-// import React, { Component } from 'react';
-//
-// import {TouchableOpacity} from 'react-native';
-//
-// import Logo from  '../assets/img/logo3.png';
-//
-// import {
-//     Container,
-//     Content,
-//     Thumbnail,
-//     Body
-//
-// } from 'native-base'
-//
-// import styles from './styles/styles.js';
-//
-// import { RoundedButton } from '../components/components';
-//
-// class Splash extends Component {
-//
-//     render() {
-//         return (
-//
-//             <Container
-//               style={ styles.bgLightGreen }>
-//                 <Content
-//                   contentContainerStyle={{
-//                     flex: 2,
-//                     marginTop: 30
-//                   }}>
-//                   <Body>
-//                 <TouchableOpacity
-//                     onPress={ () => this.props.navigation.navigate('InfoRecycle') }>
-//                 <Thumbnail style={{
-//                   width: 200,
-//                   height: 190,
-//                   marginTop: 10,
-//                   marginBottom: 10,
-//                 }} square large source={ Logo } />
-//                 </TouchableOpacity>
-//                 </Body>
-//                 </Content>
-//                 <Content contentContainerStyle={{
-//                   marginTop: 30,
-//                   justifyContent: 'flex-start',
-//                   display: 'flex',
-//                   flex: 1,
-//                   flexDirection: 'column'}}>
-//                     <RoundedButton pressed={ () => this.props.navigation.navigate('SelectProfileRole') } title="FAÇA LOGIN"/>
-//                     <RoundedButton pressed={ () => this.props.navigation.navigate('Register') } title="OU CRIE A SUA CONTA"/>
-//                 </Content>
-//             </Container>
-//         )
-//     }
-//
-// }
-//
-//
-// export default Splash;
