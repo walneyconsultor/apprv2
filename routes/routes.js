@@ -10,6 +10,7 @@ import Perfil from '../screens/perfil';
 import Maps from '../screens/maps';
 import PerfilColetor from '../screens/perfilColetor';
 import Materials from '../screens/materials';
+import ListMetal from '../screens/listMetal';
 import Feedback from '../screens/feedback';
 import SelectProfileRole from '../screens/selectProfileRole';
 
@@ -40,14 +41,11 @@ const AppNavigator = createStackNavigator({
             title:  'SelectProfileRole'
         }
     },
-    
-
     Account: {
         screen: Account,
         navigationOptions:{
             title:  'Account'
-        }
-        
+        }  
     },
     AccountColetor: {
         screen: AccountColetor,
@@ -79,6 +77,12 @@ const AppNavigator = createStackNavigator({
         screen: Materials,
         navigationOptions:{
             title:  'Materials'
+        }
+    },
+    ListMetal: {
+        screen: ListMetal,
+        navigationOptions: {
+            title: 'ListMetal',
         }
     },
     

@@ -6,7 +6,8 @@ import MarkerIcon from  '../assets/img/markerpoint.png';
 import MapConfig from './styles/map';
 
 
-import { View, Image, Button, Text, Left } from 'react-native';
+import { View, Image,Button} from 'react-native';
+
 
 export default class MapsNavigatorColetor extends Component {
     render() {

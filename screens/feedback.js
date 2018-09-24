@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
 
-import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Icon, Left, Button, Body, Right, Fab,  } from 'native-base';
+import { Container,Content, Card, CardItem, Thumbnail, Text, Left, Button, Body, Right} from 'native-base';
 
 import Logo from  '../assets/img/logo2.png';
 
@@ -13,7 +13,6 @@ export default class FeedbackPainel extends Component {
     return (
       <Container>
         <Content>
-        
           <Card>
             <CardItem>
               <Left>
@@ -29,12 +28,6 @@ export default class FeedbackPainel extends Component {
             </CardItem>
           </Card>
         </Content>
-        <Body>
-        <Button
-            success 
-            onPress={ () => this.props.navigation.navigate('Login') } 
-            title="Voltar" />
-        </Body>
       </Container>
     );
   }

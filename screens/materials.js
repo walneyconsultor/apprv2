@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {TouchableOpacity} from 'react-native';
 import { Container,Content, List, ListItem, Thumbnail, Text, Left, Body, Right, Button } from 'native-base';
 
 import Metal from  '../assets/img/icons-recycle/png/028-metal.png';
@@ -17,7 +18,10 @@ export default class MaterialsList extends Component {
           <List style={{ marginTop: 30 }}>
             <ListItem thumbnail>
               <Left>
+              <TouchableOpacity
+                    onPress={ () => this.props.navigation.navigate('ListMetal') }>  
               <Thumbnail square large source={ Metal } />
+              </TouchableOpacity>
               </Left>
               <Body>
                 <Text>Metal</Text>
@@ -28,7 +32,7 @@ export default class MaterialsList extends Component {
                 rounded
                 success
                 onPress={ () => this.props.navigation.navigate('Feedback') }>
-                  <Text>Add+</Text>
+                  <Text>Add</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -41,8 +45,11 @@ export default class MaterialsList extends Component {
                 <Text note numberOfLines={1}>Garrafa PET</Text>
               </Body>
               <Right>
-                <Button>
-                  <Text>Item</Text>
+                <Button
+                rounded
+                success
+                onPress={ () => this.props.navigation.navigate('Feedback') }>
+                  <Text>Add</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -55,8 +62,10 @@ export default class MaterialsList extends Component {
                 <Text note numberOfLines={1}>Vidros</Text>
               </Body>
               <Right>
-                <Button>
-                  <Text>Item</Text>
+                <Button rounded
+                success
+                onPress={ () => this.props.navigation.navigate('Feedback') }>
+                  <Text>Add</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -69,8 +78,11 @@ export default class MaterialsList extends Component {
                 <Text note numberOfLines={1}>Papelão</Text>
               </Body>
               <Right>
-                <Button>
-                  <Text>Item</Text>
+                <Button
+                rounded
+                success
+                onPress={ () => this.props.navigation.navigate('Feedback') }>
+                  <Text>Add</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -83,8 +95,11 @@ export default class MaterialsList extends Component {
                 <Text note numberOfLines={1}>Celular</Text>
               </Body>
               <Right>
-                <Button>
-                  <Text>Item</Text>
+                <Button
+                rounded
+                success
+                onPress={ () => this.props.navigation.navigate('Feedback') }>
+                  <Text>Add</Text>
                 </Button>
               </Right>
             </ListItem>
