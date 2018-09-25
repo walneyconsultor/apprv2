@@ -8,17 +8,17 @@ const cards = [
     image: require('../assets/img/latinha.png'),
   },
   {
-    text: 'Card Two',
+    text: 'Pneus',
     name: 'One',
     image: require('../assets/img/pneu.png'),
   },
   {
-    text: 'Card Tree',
+    text: 'Vidros',
     name: 'One',
     image: require('../assets/img/vidro.jpg'),
   },
   {
-    text: 'Card Four',
+    text: 'Baterias',
     name: 'One',
     image: require('../assets/img/bateria.jpg'),
   }

@@ -1,37 +1,52 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, List, ListItem, Text, Left, Right, Icon } from 'native-base';
-export default class ListItemSelectedExample extends Component {
+import { Container, Header, Content, List, ListItem, Text, Icon, Left, Body, Right, Button, Switch } from 'native-base';
+export default class ListIconExample extends Component {
   render() {
     return (
       <Container>
         <Header />
         <Content>
-          <List>
-            <ListItem selected>
-              <Left>
-                <Text>Simon Mignolet</Text>
-              </Left>
-              <Right>
-                <Icon name="arrow-forward" />
-              </Right>
-            </ListItem>
-            <ListItem>
-             <Left>
-                <Text>Nathaniel Clyne</Text>
-              </Left>
-              <Right>
-                <Icon name="arrow-forward" />
-              </Right>
-            </ListItem>
-            <ListItem>
-              <Left>
-                <Text>Dejan Lovren</Text>
-              </Left>
-              <Right>
-                <Icon name="arrow-forward" />
-              </Right>
-            </ListItem>
-          </List>
+          <ListItem icon>
+            <Left>
+              <Button style={{ backgroundColor: "#FF9501" }}>
+                <Icon active name="plane" />
+              </Button>
+            </Left>
+            <Body>
+              <Text>Airplane Mode</Text>
+            </Body>
+            <Right>
+              <Switch value={false} />
+            </Right>
+          </ListItem>
+          <ListItem icon>
+            <Left>
+              <Button style={{ backgroundColor: "#007AFF" }}>
+                <Icon active name="wifi" />
+              </Button>
+            </Left>
+            <Body>
+              <Text>Wi-Fi</Text>
+            </Body>
+            <Right>
+              <Text>GeekyAnts</Text>
+              <Icon active name="arrow-forward" />
+            </Right>
+          </ListItem>
+          <ListItem icon>
+            <Left>
+              <Button style={{ backgroundColor: "#007AFF" }}>
+                <Icon active name="bluetooth" />
+              </Button>
+            </Left>
+            <Body>
+              <Text>Bluetooth</Text>
+            </Body>
+            <Right>
+              <Text>On</Text>
+              <Icon active name="arrow-forward" />
+            </Right>
+          </ListItem>
         </Content>
       </Container>
     );

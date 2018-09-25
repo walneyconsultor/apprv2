@@ -17,16 +17,16 @@ import SelectProfileRole from '../screens/selectProfileRole';
 const AppNavigator = createStackNavigator({
 
    
-    Login: {
-        screen: Login,
-        navigationOptions: {
-            title: 'Login',
-        }
-    },
     Splash: {
         screen: Splash,
         navigationOptions: {
             title: 'Splash',
+        }
+    },
+    Login: {
+        screen: Login,
+        navigationOptions: {
+            title: 'Login',
         }
     },
     Maps:{
