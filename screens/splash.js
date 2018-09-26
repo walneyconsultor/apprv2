@@ -49,7 +49,7 @@ export default class Login extends Component {
                 styles={{button: styles.transparentButton}}
                 onPress={this.press.bind(this)}>
                 <View style={styles.inline}>
-                    <Icon name="facebook-official" size={30} color="#3B5699" />
+                    <Icon name="facebook-official" size={20} color="#3B5699" />
                     <Text style={[styles.buttonBlueText, styles.buttonBigText]}>  Connect </Text>
                     <Text style={styles.buttonBlueText}>with Facebook</Text>
                 </View>
@@ -58,7 +58,7 @@ export default class Login extends Component {
         <View style={styles.footer}>
             <Container>
                 <LoginButton
-                    label="Login"
+                    label="LOGIN"
                     styles={{button: styles.primaryButton, label: styles.buttonWhiteText}}
                     onPress={this.press.bind(this)} />
             </Container>
@@ -76,8 +76,8 @@ export default class Login extends Component {
 
 const styles = StyleSheet.create({
   scroll: {
-     backgroundColor: '#E1D7D8',
-     padding: 30,
+     backgroundColor: '#d6f5d6',
+     padding: 10,
      flexDirection: 'column'
   },
 
@@ -99,10 +99,11 @@ const styles = StyleSheet.create({
   },
 
   transparentButton: {
-    marginTop: 30,
+    marginTop: 20,
     borderColor: '#3B5699',
     borderWidth: 2,
-    height: 50
+    height: 50,
+
   },
   buttonBlueText: {
       fontSize: 20,
@@ -122,12 +123,13 @@ const styles = StyleSheet.create({
   buttonBlackText: {
       fontSize: 15,
       color: '#595856',
-      marginBottom: 15
+      marginBottom: 10
   },
   primaryButton: {
-      backgroundColor: '#34A853'
+      backgroundColor: '#34A853',
+      borderRadius: 35
   },
   footer: {
-     marginTop: 100
+     marginTop: 40
   }
 });

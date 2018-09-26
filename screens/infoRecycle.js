@@ -8,18 +8,23 @@ const cards = [
     image: require('../assets/img/latinha.png'),
   },
   {
+    text: 'Plástico',
+    name: 'Texto 2',
+    image: require('../assets/img/plastico.jpg'),
+  },
+  {
     text: 'Pneus',
-    name: 'One',
+    name: 'Texto 3',
     image: require('../assets/img/pneu.png'),
   },
   {
     text: 'Vidros',
-    name: 'One',
+    name: 'Texto 4',
     image: require('../assets/img/vidro.jpg'),
   },
   {
     text: 'Baterias',
-    name: 'One',
+    name: 'Texto 5',
     image: require('../assets/img/bateria.jpg'),
   }
 ];

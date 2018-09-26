@@ -46,8 +46,8 @@ class Splash extends Component {
                   display: 'flex',
                   flex: 1,
                   flexDirection: 'column'}}>
-                    <RoundedButton pressed={ () => this.props.navigation.navigate('SelectProfileRole') } title="FAÇA LOGIN"/>
-                    <RoundedButton pressed={ () => this.props.navigation.navigate('Register') } title="OU CRIE A SUA CONTA"/>
+                    <RoundedButton pressed={ () => this.props.navigation.navigate('Splash') } title="FAÇA LOGIN"/>
+                    <RoundedButton pressed={ () => this.props.navigation.navigate('SelectProfileRole') } title="OU CRIE A SUA CONTA"/>
                 </Content>
             </Container>
         )
